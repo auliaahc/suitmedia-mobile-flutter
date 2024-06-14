@@ -10,7 +10,7 @@ class PalindromeButtonFirstWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final PalindromeController palindromeController = Get.find();
     return GlobalButtonWidget(
-      onTap: () => palindromeController.checkPalindrome(),
+      onTap: () => palindromeController.checkPalindrome(context),
       label: 'Palindrome',
     );
   }

@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:suitmedia_mobile_flutter/screens/first/first_screen.dart';
 import 'package:suitmedia_mobile_flutter/screens/second/widgets/choose_user_button_second_widget.dart';
 import 'package:suitmedia_mobile_flutter/screens/second/widgets/header_second_widget.dart';
+import 'package:suitmedia_mobile_flutter/screens/second/widgets/selected_user_second_widget.dart';
 import 'package:suitmedia_mobile_flutter/widgets/global_app_bar_widget.dart';
 
 class SecondScreen extends StatelessWidget {
@@ -23,6 +24,8 @@ class SecondScreen extends StatelessWidget {
         child: Column(
           children: [
             HeaderSecondWidget(),
+            Spacer(),
+            SelectedUserSecondWidget(),
             Spacer(),
             ChooseUserButtonSecondWidget(),
           ],
